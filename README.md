@@ -1,4 +1,4 @@
 - 3 python Apps : regex, conversion, lastFiveyears
 - Each App : src (source files), data (cvs files), test (pytest)
-- In each App : pytest or pyhton min.py
-- Python > 3.8
+- In each App directory, launch pytest or python main.py
+- Python > 3.8 with requirements.txt

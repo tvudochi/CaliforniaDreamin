@@ -1,0 +1,4 @@
+- 3 python Apps : regex, conversion, lastFiveyears
+- Each App : src (source files), data (cvs files), test (pytest)
+- In each App : pytest or pyhton min.py
+- Python > 3.8

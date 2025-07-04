@@ -5,3 +5,4 @@ uvicorn
 pandas
 mypy
 jinja2
+python-dotenv

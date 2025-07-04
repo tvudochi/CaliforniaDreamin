@@ -1,6 +1,7 @@
 import pytest
 import pandas as pd
-from lastFiveyears import serie_lastFiveyears
+import config.settings
+from request_csv import serie_lastFiveyears
 
 
 def test_serie_lastFiveyears():
@@ -13,10 +14,10 @@ def test_serie_lastFiveyears():
 
     df = pd.DataFrame({
         "Date": [
-            today.strftime("%Y-%m-%d"),                          # OK
-            (five_years_ago - pd.Timedelta(days=1)).isoformat(), # Too old
-            "not a date",                                        # Not a date
-            None                                                 # None => NaT
+            today.strftime("%Y-%m-%d"),                           # OK
+            (five_years_ago - pd.Timedelta(days=1)).isoformat(),  # Too old
+            "not a date",                                         # Not a date
+            None                                                  # None => NaT
         ],
     })
 

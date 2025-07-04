@@ -1,6 +1,8 @@
 import pytest
 import pandas as pd
-from conversion import serie_conversion
+import config.settings
+
+from request_csv import serie_conversion
 
 
 def test_serie_conversion_hectare():

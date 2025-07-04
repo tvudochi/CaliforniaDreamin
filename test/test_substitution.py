@@ -1,8 +1,7 @@
-from substitution import read_csv, \
-    serie_substitute, save_csv
 import pytest
 import pandas as pd
-
+import config.settings
+from request_csv import read_csv, serie_substitute, save_csv
 
 def test_serie_substitute():
     """
